@@ -25,3 +25,8 @@ getter和setter拦截器
   lowercase & uppercase
 去除字符串前后空白字符
   trim: true/false
+===========================
+自定义验证器
+validate: {validator: Function}
+Class.schema.path(xxx).validate(fn)
+validator(v, [callback])同步验证器，加入第二个参数callback变为异步验证器
