@@ -53,3 +53,8 @@ err.errors.qq 得到qq属性值的错误信息
 加入虚拟 setter/getter 方法
   virtual('xxx').get(handle)
   virtual('xxx').set(handle(value))
+===========================
+对象的增删改
+obj.save/Clss.create/Class.insertMany
+obj.remove/Class.remove
+obj.update/Class.update

@@ -1,5 +1,3 @@
-require('vcert');
-
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/test');
 const userSchema = new mongoose.Schema({
