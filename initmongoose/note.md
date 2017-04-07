@@ -30,3 +30,10 @@ getter和setter拦截器
 validate: {validator: Function}
 Class.schema.path(xxx).validate(fn)
 validator(v, [callback])同步验证器，加入第二个参数callback变为异步验证器
+===========================
+获取错误信息
+doc.validate(error=>error) 异步获得错误信息
+error = doc.validateSync() 获得同步错误信息
+doc.save(error => error) 回调获得错误信息
+promise = doc.save() promise方式获得错误信息
+Model.update(query, update, {runValidators: true}, callback)
