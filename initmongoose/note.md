@@ -37,3 +37,12 @@ error = doc.validateSync() 获得同步错误信息
 doc.save(error => error) 回调获得错误信息
 promise = doc.save() promise方式获得错误信息
 Model.update(query, update, {runValidators: true}, callback)
+===========================
+错误信息
+err.errors 错误集合
+err.errors.qq 得到qq属性值的错误信息
+{path, value, message} = err.rerrors.qq
+===========================
+自定义错误信息
+自定义内置验证器的错误信息
+自定义验证器的错误信息
