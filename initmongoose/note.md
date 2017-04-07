@@ -46,3 +46,10 @@ err.errors.qq 得到qq属性值的错误信息
 自定义错误信息
 自定义内置验证器的错误信息
 自定义验证器的错误信息
+===========================
+加入方法
+加入实例方法 schema.methods.xxx
+加入静态方法 schema.statics.xxx
+加入虚拟 setter/getter 方法
+  virtual('xxx').get(handle)
+  virtual('xxx').set(handle(value))
