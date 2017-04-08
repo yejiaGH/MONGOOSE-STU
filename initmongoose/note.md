@@ -58,3 +58,9 @@ err.errors.qq 得到qq属性值的错误信息
 obj.save/Clss.create/Class.insertMany
 obj.remove/Class.remove
 obj.update/Class.update
+===========================
+字段更改参数
+$inc 加法运算
+$mul 乘法运算
+$min / $max 数值和日期的限定
+$currentDate 设定当前日期
