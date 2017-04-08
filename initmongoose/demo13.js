@@ -2,13 +2,15 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/test');
 
 const T = mongoose.model('Topic', {
-  name: {type: String, maxlength: 10}
+  name: {type: String, maxlength: 10},
+  num: Number
 });
 
 const arr = [];
 for(let i=1; i<50; i++) {
   arr.push({
-    name: 'alice' + i
+    name: 'alice' + i,
+    num: i
   })
 }
 
@@ -47,8 +49,12 @@ T.remove({}, function(){
     // T.find({}, null, {skip: 5, limit: 7}, function(err, t){
     //   console.log(t);
     // });
-    T.find({}, '-body', {skip: 5, limit: 7}, function(err, t){
-      console.log(t);
+    // T.find({}, '-body', {skip: 5, limit: 7}, function(err, t){
+    //   console.log(t);
+    // });
+
+    T.find({num: {$lt: 20, $gte: 10, $nin: [11, 15], $ne: 16}}, function(err, ts){
+      console.log(ts);
     });
   }).catch(err => console.log(err));
 });

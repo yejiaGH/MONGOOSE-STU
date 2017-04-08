@@ -78,3 +78,14 @@ findById
 findByIdAndRemove / findByIdAndUpdate
 findOne
 findOneAndRemove / findOneAndUpdate
+===========================
+比较式查询
+大小判断
+  $gt 大于
+  $gte 大于等于
+  $lt 小于
+  $lte 小于等于
+
+$ne 不是
+$in 包含
+$nin 不包含
