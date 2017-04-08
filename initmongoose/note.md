@@ -89,3 +89,9 @@ findOneAndRemove / findOneAndUpdate
 $ne 不是
 $in 包含
 $nin 不包含
+===========================
+逻辑式查询
+$or 或
+$nor ($or 相反)
+$and 和
+$not 否

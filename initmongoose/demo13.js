@@ -53,7 +53,22 @@ T.remove({}, function(){
     //   console.log(t);
     // });
 
-    T.find({num: {$lt: 20, $gte: 10, $nin: [11, 15], $ne: 16}}, function(err, ts){
+    // T.find({num: {$lt: 20, $gte: 10, $nin: [11, 15], $ne: 16}}, function(err, ts){
+    //   console.log(ts);
+    // });
+    // T.find({$or: [{name: 'alice1'}, {num: 2}]}, function(err, ts){
+    //   console.log(ts);
+    // });
+    // T.find({$nor: [{name: 'alice1'}, {num: 2}]}, function(err, ts){
+    //   console.log(ts);
+    // });
+    // T.find({$and: [{name: /^alice1\d$/}, {num: {$lte: 15}}]}, function(err, ts){
+    //   console.log(ts);
+    // });
+    // T.find({$and: [{$or: [{name: 'alice1'}, {num: 2}, {num: 4}]}, {num: 2}]}, function(err, ts){
+    //   console.log(ts);
+    // });
+    T.find({num: {$not: {$gte: 10}}}, function(err, ts){
       console.log(ts);
     });
   }).catch(err => console.log(err));
