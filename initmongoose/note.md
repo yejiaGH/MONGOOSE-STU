@@ -71,3 +71,10 @@ $pop删除一条数据
 $addToSet 加入不重复数据
 $pull/$pullAll清除
 $push 加入数据
+===========================
+对象的基础查询
+find(conditions, [projection], [options], [callback])
+findById
+findByIdAndRemove / findByIdAndUpdate
+findOne
+findOneAndRemove / findOneAndUpdate
