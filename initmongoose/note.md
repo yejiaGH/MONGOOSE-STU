@@ -95,3 +95,20 @@ $or 或
 $nor ($or 相反)
 $and 和
 $not 否
+===========================
+数组专用查询
+$all 是否包含 查询条件
+$elemMatch 数组元素查询条件
+$size 数组大小查询条件
+
+其他 $where
+===========================
+中间件
+validate
+pre doc.save post
+Model.create/Model.insertMany
+doc.update
+doc.remove
+find
+findOne
+findOneandRemove/findOneAndUpdate
